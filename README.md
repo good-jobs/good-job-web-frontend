@@ -4,7 +4,7 @@
 
 #### Web-FrontEnd
 
-Next JS 13 / React 18 / Typescript / PWA / Express
+Next JS 13 / React 18 / Typescript / PWA / Express /
 Styled-Components / Keen Slide / Jotai / Storybook
 
 ```shell
