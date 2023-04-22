@@ -1,5 +1,6 @@
 import Head from 'next/head'
 import styled from 'styled-components'
+import useScreenSize from '@/hooks/useScreenSize'
 
 const Section = styled.section`
   width: 100%;
@@ -11,6 +12,7 @@ const Header = styled.header`
 `
 
 export default function Home() {
+  const { isMobile } = useScreenSize()
   return (
     <>
       <Head>
@@ -20,7 +22,11 @@ export default function Home() {
       </Head>
       <Header>Good Job !</Header>
       <main>
-        <Section>우리는 세상의 좋은 직장을 소개해요</Section>
+        <Section>
+          {isMobile
+            ? '모바일: 우리는 세상의 좋은 직장을 소개해요'
+            : '우리는 세상의 좋은 직장을 소개해요'}
+        </Section>
       </main>
     </>
   )
