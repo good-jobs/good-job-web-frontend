@@ -120,28 +120,33 @@ function CategoryComponent() {
       gutter: 42,
       withLoop: true,
       startEndGutter: 36,
-      items: CategoryList.map((item: Item, index: number) => ({
-        id: index,
-        renderItem: (
-          <CardBoxWrapper isActive={item.id === active}>
-            <BackgroundCard />
-            <Image
-              src={item.image}
-              isActive={item.id === active}
-              draggable={false}
-              onClick={() => {
-                setActive(item.id)
-                const checkIdx = CategoryList.findIndex((x) => x.id === item.id)
-                slideToItem(checkIdx)
-              }}
-            />
-            <ItemText isActive={item.id === active}>
-              <h3>{item.title}</h3>
-              <div>{item.desc}</div>
-            </ItemText>
-          </CardBoxWrapper>
-        ),
-      })),
+      items: CategoryList.map(
+        (item: Item, index: number) =>
+          ({
+            id: index,
+            renderItem: (
+              <CardBoxWrapper isActive={item.id === active}>
+                <BackgroundCard />
+                <Image
+                  src={item.image}
+                  isActive={item.id === active}
+                  draggable={false}
+                  onClick={() => {
+                    setActive(item.id)
+                    const checkIdx = CategoryList.findIndex(
+                      (x) => x.id === item.id,
+                    )
+                    slideToItem(checkIdx)
+                  }}
+                />
+                <ItemText isActive={item.id === active}>
+                  <h3>{item.title}</h3>
+                  <div>{item.desc}</div>
+                </ItemText>
+              </CardBoxWrapper>
+            ),
+          } as any),
+      ),
     })
 
   useListenToCustomEvent((event) => {
