@@ -4,7 +4,6 @@ export const Container = styled.div`
   width: 100vw;
   height: 28vh;
   color: #000000;
-
   position: relative;
   display: flex;
   align-items: center;
@@ -79,4 +78,6 @@ export const Image = styled.img`
   object-fit: contain;
   width: 100%;
   height: 100%;
+  background-blend-mode: multiply;
+  filter: opacity(0.8) drop-shadow(0 0 0 rgba(255, 255, 255, 1));
 `
