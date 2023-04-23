@@ -14,7 +14,7 @@ export const Header = styled.h1`
   font-weight: 800;
   color: #fff;
   text-align: center;
-  margin: 52px 0 32px;
+  margin: 62px 0 32px;
   text-align: center;
   position: relative;
 
