@@ -1,14 +1,6 @@
 /**
  * 현재 뷰포트 크기를 가져오는 커스텀 훅
  * @param breakpoints 뷰포트 사용자 지정 범위(기본값: defaultSizes)
- * @returns: {
-    currentWidth,
-    currentHeight,
-    isLargeDesktop,
-    isDesktop,
-    isTablet,
-    isMobile,
-  }
  */
 /* eslint-disable consistent-return */
 import { useEffect, useState } from 'react'

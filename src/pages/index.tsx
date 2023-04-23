@@ -1,6 +1,7 @@
 import Head from 'next/head'
 import styled from 'styled-components'
 import useScreenSize from '@/hooks/useScreenSize'
+import useUserAgent from '@/hooks/useUserAgent'
 
 const Section = styled.section`
   width: 100%;
@@ -13,6 +14,8 @@ const Header = styled.header`
 
 export default function Home() {
   const { isMobile } = useScreenSize()
+  const { device } = useUserAgent()
+
   return (
     <>
       <Head>
@@ -26,6 +29,7 @@ export default function Home() {
           {isMobile
             ? '모바일: 우리는 세상의 좋은 직장을 소개해요'
             : '우리는 세상의 좋은 직장을 소개해요'}
+          <p>내 디바이스는 : {device.model}</p>
         </Section>
       </main>
     </>
