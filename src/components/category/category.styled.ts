@@ -16,7 +16,7 @@ const ContentWrapper = styled.div`
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  padding-top: 6rem;
+  padding-top: 7rem;
 `
 
 const InnerWrapper = styled.div`

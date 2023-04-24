@@ -2,6 +2,7 @@ import Head from 'next/head'
 import MarqueeComponent from '@/components/marquee'
 import BestComponent from '@/components/best'
 import CategoryComponent from '@/components/category'
+import FilterComponent from '@/components/filter'
 
 import { Section, Header } from '../styles/main.styled'
 // import useScreenSize from '@/hooks/useScreenSize'
@@ -23,6 +24,7 @@ export default function Home() {
       </main>
       <Section>
         <BestComponent />
+        <FilterComponent />
         <CategoryComponent />
       </Section>
     </>
