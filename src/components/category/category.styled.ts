@@ -1,22 +1,21 @@
 import styled from 'styled-components'
 
 const Container = styled.div`
-  height: 100vh;
-  width: 100vw;
-  margin: 48px auto;
+  width: 100%;
+  margin: 0px auto;
   box-sizing: border-box;
   display: flex;
   flex-direction: column;
   justify-content: flex-start;
   align-items: center;
   overflow: hidden;
+  margin-top: 98px;
 `
 
 const ContentWrapper = styled.div`
   width: 100%;
   display: flex;
   justify-content: flex-end;
-  padding-top: 7rem;
 `
 
 const InnerWrapper = styled.div`
@@ -25,9 +24,9 @@ const InnerWrapper = styled.div`
 `
 
 const Headtext = styled.div`
-  font-size: 25px;
+  font-size: 1.2rem;
   color: #fff;
-  margin-left: 40px;
+  margin-left: 32px;
 `
 
 const TextWrapper = styled.div`
@@ -38,12 +37,12 @@ const TextWrapper = styled.div`
 `
 
 const BoldText = styled.div`
-  font-size: 60px;
+  font-size: 3rem;
   font-weight: 600;
   color: #fff;
   width: 100%;
-  margin-left: 40px;
-  line-height: 80px;
+  margin-left: 32px;
+  margin-top: 4px;
 `
 
 const Text = styled.div`
@@ -98,10 +97,10 @@ interface ImageProps {
 }
 
 const Image = styled.img<ImageProps>`
-  width: 250px;
+  width: 224px;
   height: auto;
   position: absolute;
-  bottom: -10px;
+  bottom: -4px;
   left: 0;
   user-select: none;
   transition: all 0.3s ease-in-out;

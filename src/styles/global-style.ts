@@ -2,35 +2,33 @@ import { createGlobalStyle } from 'styled-components'
 import { reset } from 'styled-reset'
 
 const GlobalStyle = createGlobalStyle`
-  ${reset}  
-  a{
-    text-decoration: none;
-    color: inherit;
-  }
-  *{
+  ${reset};
+  *,
+  *::before,
+  *::after {
     box-sizing: border-box;
-  }
-  html, body, div, span, h1, h2, h3, h4, h5, h6, p,
-  a, dl, dt, dd, ol, ul, li, form, label, table{
     margin: 0;
     padding: 0;
-    border: 0;
-    font-size: 12px;
-    vertical-align: baseline;
   }
-  body{
-    line-height: 1;
+  body {
     font-family: 'Noto Sans KR', sans-serif;
+    line-height: 1;
     background-color: #000;
     margin-bottom: 100px;
   }
-  ol, ul{
+  a {
+    color: inherit;
+    text-decoration: none;
+  }
+  ol,
+  ul {
     list-style: none;
   }
   button {
-    border: 0;
     background: transparent;
+    border: none;
     cursor: pointer;
   }
 `
+
 export default GlobalStyle

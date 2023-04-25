@@ -117,7 +117,7 @@ function CategoryComponent() {
   const { carouselFragment, slideToItem, useListenToCustomEvent } =
     useSpringCarousel({
       itemsPerSlide: noOfItem,
-      gutter: 42,
+      gutter: 28,
       withLoop: true,
       startEndGutter: 36,
       items: CategoryList.map(

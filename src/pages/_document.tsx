@@ -1,7 +1,3 @@
-/**
- *2023/4/22 server styled-sheet: 최초 페이지를 그릴때 css hydrate
- */
-
 import React from 'react'
 import { ServerStyleSheet } from 'styled-components'
 import Document, {

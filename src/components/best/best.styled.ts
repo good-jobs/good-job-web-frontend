@@ -3,18 +3,24 @@ import styled from 'styled-components'
 interface IItemWrapper {
   isActive: boolean
 }
+
+interface IItem {
+  isActive: boolean
+}
+
+interface IContentWrap {
+  isActive: boolean
+  isFirst: boolean
+}
+
 export const BestContainer = styled.div`
   position: relative;
-  width: 100%;
-  height: 100vh;
-  display: flex;
-  justify-content: center;
-  align-items: center;
-  margin-top: 28px;
+  width: 88%;
+  margin: 48px auto;
 `
 
 export const Wrapper = styled.div`
-  width: 1300px;
+  width: 100%;
 `
 
 export const BestInner = styled.div`
@@ -25,7 +31,7 @@ export const BestInner = styled.div`
 `
 
 export const Side = styled.div`
-  font-size: 40px;
+  font-size: 3.2rem;
   position: relative;
 `
 
@@ -49,11 +55,6 @@ export const ItemWrapper = styled.div<IItemWrapper>`
   flex-grow: ${({ isActive }) => (isActive ? 4 : 1)};
   transition: all 0.6s ease;
 `
-
-interface IItem {
-  isActive: boolean
-}
-
 export const Item = styled.div<IItem>`
   position: relative;
   width: 100%;
@@ -75,11 +76,6 @@ export const Item = styled.div<IItem>`
     background-image: linear-gradient(rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.7));
   }
 `
-
-interface IContentWrap {
-  isActive: boolean
-  isFirst: boolean
-}
 
 export const ContentWrap1 = styled.div<IContentWrap>`
   box-sizing: border-box;
@@ -145,7 +141,7 @@ export const TextWrapper = styled.div`
 `
 
 export const Text = styled.div`
-  font-size: 80px;
+  font-size: 4.4rem;
   color: #fff;
   font-weight: 600;
 `
@@ -153,7 +149,7 @@ export const SearchWrapper = styled.div`
   position: absolute;
   bottom: 60px;
   height: 120px;
-  width: 450px;
+  width: 420px;
   z-index: 2;
   display: flex;
   align-items: center;
@@ -171,12 +167,12 @@ export const SearchInput = styled.input`
   height: inherit;
   outline: none;
   border: none;
-  padding-left: 50px;
+  padding-left: 32px;
   box-sizing: border-box;
-  font-size: 20px;
+  font-size: 1.2rem;
 
   ::placeholder {
-    font-size: 20px;
+    font-size: 1.2rem;
     color: #1e1e2f;
     font-family: 'Archia-Regular';
     transition: all 0.4s ease;
@@ -199,7 +195,7 @@ export const SearchButtom = styled.button`
   aspect-ratio: 1;
   outline: none;
   border: none;
-  font-size: 34px;
+  font-size: 2rem;
   font-weight: 600;
   font-family: 'Archia-Regular';
 

@@ -10,17 +10,17 @@ export const Section = styled.section`
 `
 
 export const Header = styled.h1`
-  font-size: 6rem;
+  font-size: 4.6rem;
   font-weight: 800;
   color: #fff;
   text-align: center;
-  margin: 62px 0 32px;
+  margin-top: 60px;
   text-align: center;
   position: relative;
 
   &::before {
-    top: -36px;
-    font-size: 2.4rem;
+    top: -38px;
+    font-size: 2rem;
     position: absolute;
     font-weight: 600;
     content: 'GOOD JOB';

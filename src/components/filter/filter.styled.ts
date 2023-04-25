@@ -2,31 +2,33 @@ import styled from 'styled-components'
 
 const Container = styled.div`
   display: flex;
-  justify-content: center;
+  justify-content: space-between;
+  width: 88%;
+  margin: 0 auto;
 `
 const TextWrapper = styled.div`
   line-height: 80px;
-  margin-top: 100px;
+  margin-top: 92px;
 `
 
 const Text = styled.div`
-  font-size: 80px;
+  font-size: 4.2rem;
   color: #fff;
   font-weight: 600;
 `
 const NeoButtonWrap = styled.div`
   display: flex;
-  justify-content: center;
   align-items: center;
   flex-wrap: wrap;
-  max-width: 820px;
-  gap: 20px;
+  max-width: 880px;
+  gap: 24px;
   max-height: 100px;
   margin-top: 160px;
   label {
     position: relative;
-    width: 128px;
-    height: 56px;
+    padding: 20px;
+    min-width: 152px;
+    height: 62px;
     display: flex;
     justify-content: center;
     align-items: center;
